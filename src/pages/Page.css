@@ -1,0 +1,9 @@
+.page{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        transition: all 2s linear;
+}
+.page:hover{
+        width: 200px;
+}
