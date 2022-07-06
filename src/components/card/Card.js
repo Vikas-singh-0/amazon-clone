@@ -19,7 +19,7 @@ export const Card = () => {
 
   return (
     <>
-      <div className="card">
+      <div className="card" style={{'marginTop':'-15%'}}>
         {list
           .filter((e, i) => i < 4)
           .map((element) => {
@@ -53,7 +53,7 @@ export const Card = () => {
             );
           })}
       </div>
-  <img src="https://amazon-clone-ravi-chauhan.netlify.app/static/media/banner.650b3a7053bf38420159.jpg"/>
+  <img style={{'width':'100%'}} src="https://amazon-clone-ravi-chauhan.netlify.app/static/media/banner.650b3a7053bf38420159.jpg"/>
       <div className="card">
         {list
           .filter((e, i) => i > 3)

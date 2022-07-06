@@ -57,23 +57,23 @@ export const Header = () => {
           <GiHamburgerMenu />
         </a>
         <a href="#">Amazon Prime</a>
-        <a href="">Prime Video</a>
+        <a href="#">Prime Video</a>
 
-        <a href> Amazon Business</a>
+        <a href="#"> Amazon Business</a>
 
-        <a href> Today's Deals</a>
+        <a href="#"> Today's Deals</a>
 
-        <a href> Electronics</a>
+        <a href="#"> Electronics</a>
 
-        <a href> Food & Grocery</a>
+        <a href="#"> Food & Grocery</a>
 
-        <a href> Prime</a>
+        <a href="#"> Prime</a>
 
-        <a href> Buy Again</a>
+        <a href="#"> Buy Again</a>
 
-        <a href> Shopper Toolkit</a>
+        <a href="#"> Shopper Toolkit</a>
 
-        <a href>Health & Personal Care</a>
+        <a href="#">Health & Personal Care</a>
       </NavLinks>
     </>
   );
