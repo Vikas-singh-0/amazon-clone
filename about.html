@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(45deg, #fbda61, #ff51cd);
+      }
+      .card {
+        position: relative;
+        width: 350px;
+        height: 190px;
+        /* height: 450px; */
+        transition: 0.5s;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 35px 80px rgba(0, 0, 0, 0.427);
+      }
+      .card:hover {
+        height: 450px;
+        transition: 0.5s;
+      }
+      .card:hover .details {
+        transform: translateY(0px);
+      }
+      .card:hover .img-box {
+        top: 0%;
+        width: 100%;
+        border-radius: 10px;
+      }
+      .card:hover img {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        top: -50px;
+        animation: move 8s linear 0.3s infinite forwards;
+        /* top: 10px; */
+        /* left: 10px; */
+      }
+      @keyframes move {
+        0% {
+          top: -50px;
+        }
+        50% {
+          /* transform: scale(0.5); */
+          top: -200px;
+        }
+        100% {
+          /* transform: scale(1); */
+          top: -50px;
+        }
+      }
+      .img-box {
+        position: absolute;
+        transition: 0.5s;
+        top: -88px;
+        left: 50%;
+        width: 150px;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+        height: 150px;
+        border-radius: 20px;
+        transform: translateX(-50%);
+        background-color: #fff;
+        overflow: hidden;
+      }
+      .img-box img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+      }
+      .card .content {
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+      }
+      .content .details {
+        display: flex;
+        justify-content: center;
+        transition: 0.5s;
+        align-items: center;
+        position: absolute;
+        flex-direction: column;
+        padding: 1rem;
+        transform: translateY(140px);
+        overflow: hidden;
+      }
+      .details h2 {
+        display: contents;
+        font-weight: bolder;
+        color: #000000bd;
+        font-size: xxx-large;
+      }
+      h2 > span {
+        font-size: x-large;
+      }
+      .data,.actions{
+        visibility: hidden;
+      }
+      .card:hover .actions{
+        visibility: visible;
+        opacity: 1;
+      }
+      .card:hover .data{
+        visibility: visible;
+        opacity: 1;
+      }
+      .data {
+        /* position: absolute; */
+        display: flex;
+        opacity: 0;
+        transition: all 0.2s linear;
+        margin: 20px;
+        /* flex-direction: column; */
+      }
+      .data h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+      h3 {
+        font-size: xx-large;
+      }
+      h3 > span {
+        opacity: 0.5;
+        font-size: large;
+      }
+      .actions {
+        opacity: 0;
+        transition: .5s;
+        /* animation: fade 1s 5s forwards; */
+        width: 100%;
+        gap: 50px;
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .actions button{
+        width: 100px;
+        height: 36px;
+        border: none;
+        color: #120e03;
+        background-color: aqua;
+        border-radius: 5px;
+        padding: 2px;
+      }
+      @keyframes fade {
+        0%{
+          opacity: 0%;
+        }
+        100%{
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="img-box">
+        <img
+          src="./src/asssets/vks.png"
+          alt=""
+        />
+      </div>
+      <div class="content">
+        <div class="details">
+          <h2>Vikas Singh <br /><span>Web developer</span></h2>
+          <div class="data">
+            <h3>342 <br /><span>Posts</span></h3>
+            <h3>10k <br /><span>Followers</span></h3>
+            <h3>69 <br /><span>Shits</span></h3>
+          </div>
+          <div class="actions">
+            <button>Follow</button>
+            <button>Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

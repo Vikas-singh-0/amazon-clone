@@ -19,7 +19,7 @@ export const Card = () => {
 
   return (
     <>
-      <div className="card" style={{'marginTop':'-15%'}}>
+      <div className="card" style={{ marginTop: "-15%" }}>
         {list
           .filter((e, i) => i < 4)
           .map((element) => {
@@ -53,7 +53,10 @@ export const Card = () => {
             );
           })}
       </div>
-  <img style={{'width':'100%'}} src="https://amazon-clone-ravi-chauhan.netlify.app/static/media/banner.650b3a7053bf38420159.jpg"/>
+      <img
+        style={{ width: "100%" }}
+        src="https://amazon-clone-ravi-chauhan.netlify.app/static/media/banner.650b3a7053bf38420159.jpg"
+      />
       <div className="card">
         {list
           .filter((e, i) => i > 3)
@@ -97,6 +100,7 @@ const Item = styled.div`
   position: relative;
   margin: 15px 10px;
   height: 30rem;
+  min-width:346px;
   background-color: white;
   box-shadow: 1px 4px 11px 1px #0000005e;
   border: 2px solid #00000038;
